@@ -1,0 +1,10 @@
+{
+  "loading_date": "0000-00-00",
+  "load_code": "TA",
+  "load_designation": "Test Automation",
+  "planned_loading_datetime": "0000-00-00T00:00:00",
+  "work_mode_code": "L10",
+  "transport_type_code_means": "001",
+  "carrier_code": "ADT",
+  "carrier_appointment_made": "false"
+}

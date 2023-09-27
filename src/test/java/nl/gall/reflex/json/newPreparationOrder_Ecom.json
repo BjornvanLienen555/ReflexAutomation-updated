@@ -1,0 +1,83 @@
+{
+      "originator_reference": "string",
+      "preparation_type_code": "010",
+      "end_consignee_code": "7173",
+      "end_consignee_reference": "1335",
+      "requested_delivery_start_datetime": null,
+      "requested_delivery_end_datetime": null,
+      "requested_delivery_date_type": "010",
+      "planned_final_delivery_start_datetime": "2023-09-01T00:00:00.000",
+      "planned_final_delivery_end_datetime": null,
+      "intermediate_consignee": true,
+      "intermediate_consignee_code": "HUB_DYN_4523",
+      "consolidated_delivery": true,
+      "intermediate_delivery_start_datetime": "2023-09-01T00:00:00.000",
+      "intermediate_delivery_end_datetime": null,
+      "pick_sequence_code": "",
+      "print_deconsolidation_sheet": false,
+      "print_final_delivery_note": false,
+      "protected": false,
+      "automatic_generation": true,
+      "stock_despatch_at_preparation_confirmation": true,
+      "deactivate": false,
+      "optional_attributes": {
+        "apt_with_end_consignee": false,
+        "apt_with_intermediate": false,
+        "reason_code": "E1",
+        "load_grouping": "7173"
+      },
+      "line_list": [
+        {
+          "originator_reference_line_number": 0,
+          "item_code": "string",
+          "base_lv_quantity_to_prepare": 6,
+          "input_order_data": true,
+          "base_vl_quantity_ordered": 6,
+          "stock_reservation": false,
+          "service_priority_code": "1",
+          "forced_priority_date_min_lead_time": false,
+          "temp_substitution_possible": false,
+          "substitution_possible": false,
+          "base_lv_quantity": true,
+          "any_lv": true,
+          "optional_attributes": {
+            "cross_docking": false,
+            "tolerance_percentage_over": 0,
+            "tolerance_percentage_under": 0,
+            "cross_docking_even_if_pickrun": false,
+            "calculate_even_if_cross_docking": false,
+            "line_in_cross_docking_allocation": false,
+            "mandatory_service": false,
+            "complete_kit": false,
+            "serve_in_fp_mode_only": false,
+            "serve_in_lifo": false
+          }
+        },
+        {
+          "originator_reference_line_number": 1,
+          "item_code": "string",
+          "base_lv_quantity_to_prepare": 6,
+          "input_order_data": true,
+          "base_vl_quantity_ordered": 6,
+          "stock_reservation": false,
+          "service_priority_code": "1",
+          "forced_priority_date_min_lead_time": false,
+          "temp_substitution_possible": false,
+          "substitution_possible": false,
+          "base_lv_quantity": true,
+          "any_lv": true,
+          "optional_attributes": {
+            "cross_docking": false,
+            "tolerance_percentage_over": 0,
+            "tolerance_percentage_under": 0,
+            "cross_docking_even_if_pickrun": false,
+            "calculate_even_if_cross_docking": false,
+            "line_in_cross_docking_allocation": false,
+            "mandatory_service": false,
+            "complete_kit": false,
+            "serve_in_fp_mode_only": false,
+            "serve_in_lifo": false
+        }
+        }
+      ]
+    }

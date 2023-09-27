@@ -1,0 +1,22 @@
+name: On Demand Execution Shared Runner
+on: workflow_dispatch
+ # schedule:
+ #   - cron: "*/5 * * * *"
+jobs:
+  build:
+    runs-on: tech-nl-generic
+    container:
+      image: maven:3.8.6-openjdk-18
+    steps:
+     - uses: actions/checkout@v2
+       name: Clone project
+     - name: run the tests for Receiving
+       env:
+          ZEPHYR_TOKEN: ${{ secrets.ZEPHYR_TOKEN }}
+       run: |
+         mvn clean test "-Dkarate.options=classpath:nl/gall/reflex/features/Receiving.feature" "-Duserid=${{ secrets.CLIENTID_RECEIVING }}" "-Dusersecret=${{ secrets.CLIENTSECRET_RECEIVING }}" "-Dcred=${{ secrets.REFLEXPASS }}"
+     - name: run the tests for Basic Data
+       env:
+          ZEPHYR_TOKEN: ${{ secrets.ZEPHYR_TOKEN }}
+       run: |
+         mvn clean test "-Dkarate.options=classpath:nl/gall/reflex/features/Basic_Data.feature" "-Duserid=${{ secrets.CLIENTID_BASIC_DATA }}" "-Dusersecret=${{ secrets.CLIENTSECRET_BASIC_DATA }}" "-Dcred=${{ secrets.REFLEXPASS }}"

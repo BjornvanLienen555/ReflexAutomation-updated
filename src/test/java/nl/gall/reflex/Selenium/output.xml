@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230927 11:02:57.725" rpa="false" schemaversion="4">
+<suite id="s1" name="Test" source="C:\Users\MaxSchuiling\OneDrive - KZA B.V\Bureaublad\Opdrachten\Gall&amp;Gall Stage\ReflexAutomation-main\src\test\java\nl\gall\reflex\selenium\test.robot">
+<test id="s1-t1" name="Set Docks and Confirm Order" line="17">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>https://reflex-tst.gall.nl/reflex/env/recette</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230927 11:02:58.062" level="INFO">Opening browser 'edge' to base url 'https://reflex-tst.gall.nl/reflex/env/recette'.</msg>
+<msg timestamp="20230927 11:02:58.073" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230927 11:02:58.062" endtime="20230927 11:03:02.476"/>
+</kw>
+<kw name="Pause" library="keywords_common">
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230927 11:03:02.476" endtime="20230927 11:03:02.476"/>
+</kw>
+<status status="PASS" starttime="20230927 11:03:02.476" endtime="20230927 11:03:02.477"/>
+</kw>
+<kw name="Login" library="auth">
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230927 11:03:02.477" endtime="20230927 11:03:02.478"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230927 11:03:02.478" endtime="20230927 11:03:02.630"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@id="social-gag"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230927 11:03:02.630" endtime="20230927 11:03:02.663"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="username"]</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230927 11:03:02.665" level="INFO">Typing text 'bvl' into text field '//*[@id="username"]'.</msg>
+<status status="PASS" starttime="20230927 11:03:02.664" endtime="20230927 11:03:02.979"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//*[@id="password"]</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230927 11:03:02.982" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
+<msg timestamp="20230927 11:03:03.075" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230927 11:03:03.185" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230927 11:03:02.980" endtime="20230927 11:03:03.185"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="kc-login"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230927 11:03:03.186" level="INFO">Clicking button '//*[@id="kc-login"]'.</msg>
+<status status="PASS" starttime="20230927 11:03:03.186" endtime="20230927 11:03:13.168"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>60</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230927 11:03:13.168" endtime="20230927 11:03:13.170"/>
+</kw>
+<status status="PASS" starttime="20230927 11:03:02.477" endtime="20230927 11:03:13.170"/>
+</kw>
+<kw name="Search Receipts" library="keywords_manage_receipts">
+<kw name="Select/Clear Searchbar" library="keywords_common">
+<kw name="Pause" library="keywords_common">
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230927 11:03:13.171" endtime="20230927 11:03:13.171"/>
+</kw>
+<status status="PASS" starttime="20230927 11:03:13.171" endtime="20230927 11:03:13.171"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SEARCHBAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230927 11:03:13.172" level="INFO">Clicking element '//input[@class="dijitReset dijitInputInner"]'.</msg>
+<status status="PASS" starttime="20230927 11:03:13.171" endtime="20230927 11:03:34.417"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${SEARCHBAR}</arg>
+<arg>${CLEARTEXT}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230927 11:03:34.418" level="INFO">Sending key(s) ('BACKSPACE+BACKSPACE+BACKSPACE+BACKSPACE+BACKSPACE+BACKSPACE+BACKSPACE+BACKSPACE+BACKSPACE+BACKSPACE+BACKSPACE+BACKSPACE',) to //input[@class="dijitReset dijitInputInner"] element.</msg>
+<msg timestamp="20230927 11:03:34.717" level="INFO">Pressing special key BACKSPACE down.</msg>
+<msg timestamp="20230927 11:03:34.717" level="INFO">Pressing special key BACKSPACE down.</msg>
+<msg timestamp="20230927 11:03:34.717" level="INFO">Pressing special key BACKSPACE down.</msg>
+<msg timestamp="20230927 11:03:34.717" level="INFO">Pressing special key BACKSPACE down.</msg>
+<msg timestamp="20230927 11:03:34.717" level="INFO">Pressing special key BACKSPACE down.</msg>
+<msg timestamp="20230927 11:03:34.717" level="INFO">Pressing special key BACKSPACE down.</msg>
+<msg timestamp="20230927 11:03:34.717" level="INFO">Pressing special key BACKSPACE down.</msg>
+<msg timestamp="20230927 11:03:34.717" level="INFO">Pressing special key BACKSPACE down.</msg>
+<msg timestamp="20230927 11:03:34.717" level="INFO">Pressing special key BACKSPACE down.</msg>
+<msg timestamp="20230927 11:03:34.717" level="INFO">Pressing special key BACKSPACE down.</msg>
+<msg timestamp="20230927 11:03:34.717" level="INFO">Pressing special key BACKSPACE down.</msg>
+<msg timestamp="20230927 11:03:34.717" level="INFO">Pressing special key BACKSPACE down.</msg>
+<msg timestamp="20230927 11:03:34.717" level="INFO">Releasing special key BACKSPACE.</msg>
+<msg timestamp="20230927 11:03:34.718" level="INFO">Releasing special key BACKSPACE.</msg>
+<msg timestamp="20230927 11:03:34.718" level="INFO">Releasing special key BACKSPACE.</msg>
+<msg timestamp="20230927 11:03:34.718" level="INFO">Releasing special key BACKSPACE.</msg>
+<msg timestamp="20230927 11:03:34.718" level="INFO">Releasing special key BACKSPACE.</msg>
+<msg timestamp="20230927 11:03:34.718" level="INFO">Releasing special key BACKSPACE.</msg>
+<msg timestamp="20230927 11:03:34.718" level="INFO">Releasing special key BACKSPACE.</msg>
+<msg timestamp="20230927 11:03:34.718" level="INFO">Releasing special key BACKSPACE.</msg>
+<msg timestamp="20230927 11:03:34.718" level="INFO">Releasing special key BACKSPACE.</msg>
+<msg timestamp="20230927 11:03:34.718" level="INFO">Releasing special key BACKSPACE.</msg>
+<msg timestamp="20230927 11:03:34.718" level="INFO">Releasing special key BACKSPACE.</msg>
+<msg timestamp="20230927 11:03:34.718" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20230927 11:03:34.417" endtime="20230927 11:03:34.734"/>
+</kw>
+<status status="PASS" starttime="20230927 11:03:13.171" endtime="20230927 11:03:34.734"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${SEARCHBAR}</arg>
+<arg>${RECEIPTCODE}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230927 11:03:34.735" level="INFO">Sending key(s) ('HFRE00',) to //input[@class="dijitReset dijitInputInner"] element.</msg>
+<msg timestamp="20230927 11:03:35.006" level="INFO">Sending keys HFRE00</msg>
+<status status="PASS" starttime="20230927 11:03:34.734" endtime="20230927 11:03:35.029"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@class="dijitReset dijitMenuItem a-font-1"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230927 11:03:35.029" endtime="20230927 11:03:35.043"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class="dijitPopup dijitComboBoxMenuPopup"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230927 11:03:35.043" level="INFO">Clicking element '//*[@class="dijitPopup dijitComboBoxMenuPopup"]'.</msg>
+<status status="PASS" starttime="20230927 11:03:35.043" endtime="20230927 11:03:36.172"/>
+</kw>
+<kw name="Pause" library="keywords_common">
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230927 11:03:36.172" endtime="20230927 11:03:36.173"/>
+</kw>
+<status status="PASS" starttime="20230927 11:03:36.172" endtime="20230927 11:03:36.173"/>
+</kw>
+<status status="PASS" starttime="20230927 11:03:13.170" endtime="20230927 11:03:36.173"/>
+</kw>
+<kw name="Filter Receipt Date" library="keywords_manage_receipts">
+<kw name="Pause" library="keywords_common">
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230927 11:03:36.173" endtime="20230927 11:03:36.174"/>
+</kw>
+<status status="PASS" starttime="20230927 11:03:36.173" endtime="20230927 11:03:36.174"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DATEINPUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230927 11:03:36.175" level="INFO">Clicking element '//*[@maxlength="8"]'.</msg>
+<status status="PASS" starttime="20230927 11:03:36.174" endtime="20230927 11:03:46.038"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${DATEINPUT}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230927 11:03:46.039" endtime="20230927 11:03:46.151"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${DATEINPUT}</arg>
+<arg>${DATE}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230927 11:03:46.152" level="INFO">Sending key(s) ('22-09-23',) to //*[@maxlength="8"] element.</msg>
+<msg timestamp="20230927 11:03:46.540" level="INFO">Sending keys 22-09-23</msg>
+<status status="PASS" starttime="20230927 11:03:46.151" endtime="20230927 11:03:46.638"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${DATEINPUT}</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230927 11:03:46.639" level="INFO">Sending key(s) ('RETURN',) to //*[@maxlength="8"] element.</msg>
+<msg timestamp="20230927 11:03:46.981" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20230927 11:03:46.981" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20230927 11:03:46.638" endtime="20230927 11:03:46.993"/>
+</kw>
+<kw name="Pause" library="keywords_common">
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230927 11:03:46.993" endtime="20230927 11:03:46.993"/>
+</kw>
+<status status="PASS" starttime="20230927 11:03:46.993" endtime="20230927 11:03:46.993"/>
+</kw>
+<status status="PASS" starttime="20230927 11:03:36.173" endtime="20230927 11:03:46.993"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${RECEIPTEND}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230927 11:03:46.994" endtime="20230927 11:04:47.952"/>
+</kw>
+<kw name="Assign Dock" library="keywords_manage_receipts">
+<kw name="Open Context Menu" library="SeleniumLibrary">
+<arg>${RECEIPTDATA}</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230927 11:04:47.953" endtime="20230927 11:04:48.574"/>
+</kw>
+<kw name="Pause" library="keywords_common">
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230927 11:04:48.575" endtime="20230927 11:04:48.575"/>
+</kw>
+<status status="PASS" starttime="20230927 11:04:48.574" endtime="20230927 11:04:48.575"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SELECTDOCK}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230927 11:04:48.575" endtime="20230927 11:04:48.620"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${SELECTDOCK}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20230927 11:04:48.621" level="INFO">Simulating Mouse Over on element '//*[@adeldonotchangestack="true"]/table/tbody/tr[7]'.</msg>
+<status status="PASS" starttime="20230927 11:04:48.620" endtime="20230927 11:04:48.912"/>
+</kw>
+<kw name="Pause" library="keywords_common">
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230927 11:04:48.913" endtime="20230927 11:04:48.913"/>
+</kw>
+<status status="PASS" starttime="20230927 11:04:48.912" endtime="20230927 11:04:48.913"/>
+</kw>
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>${SELECTDOCK}</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<msg timestamp="20230927 11:04:48.914" level="INFO">Double clicking element '//*[@adeldonotchangestack="true"]/table/tbody/tr[7]'.</msg>
+<status status="PASS" starttime="20230927 11:04:48.913" endtime="20230927 11:04:49.253"/>
+</kw>
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>xpath=//html/body/div[2]/div[1]/div[1]/div[10]/div[4]/div[1]/div[3]/div[1]/div/div[2]/div[2]/div/div[2]/table/tr/td[4]/div/div</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<msg timestamp="20230927 11:04:49.254" level="INFO">Double clicking element 'xpath=//html/body/div[2]/div[1]/div[1]/div[10]/div[4]/div[1]/div[3]/div[1]/div/div[2]/div[2]/div/div[2]/table/tr/td[4]/div/div'.</msg>
+<status status="PASS" starttime="20230927 11:04:49.253" endtime="20230927 11:04:50.951"/>
+</kw>
+<status status="PASS" starttime="20230927 11:04:47.952" endtime="20230927 11:04:50.952"/>
+</kw>
+<kw name="Confirm Order" library="keywords_manage_receipts">
+<kw name="Open Context Menu" library="SeleniumLibrary">
+<arg>${RECEIPTDATA}</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230927 11:04:50.953" endtime="20230927 11:04:51.451"/>
+</kw>
+<kw name="Pause" library="keywords_common">
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230927 11:04:51.452" endtime="20230927 11:04:51.452"/>
+</kw>
+<status status="PASS" starttime="20230927 11:04:51.451" endtime="20230927 11:04:51.452"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CONFIRM ORDER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230927 11:04:51.452" endtime="20230927 11:04:51.503"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${CONFIRM ORDER}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20230927 11:04:51.504" level="INFO">Simulating Mouse Over on element '//*[@adeldonotchangestack="true"]/table/tbody/tr[13]'.</msg>
+<status status="PASS" starttime="20230927 11:04:51.503" endtime="20230927 11:04:51.786"/>
+</kw>
+<kw name="Pause" library="keywords_common">
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230927 11:04:51.786" endtime="20230927 11:04:51.786"/>
+</kw>
+<status status="PASS" starttime="20230927 11:04:51.786" endtime="20230927 11:04:51.787"/>
+</kw>
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>${CONFIRM ORDER}</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<msg timestamp="20230927 11:04:51.787" level="INFO">Double clicking element '//*[@adeldonotchangestack="true"]/table/tbody/tr[13]'.</msg>
+<status status="PASS" starttime="20230927 11:04:51.787" endtime="20230927 11:04:52.083"/>
+</kw>
+<kw name="Pause" library="keywords_common">
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230927 11:04:52.083" endtime="20230927 11:04:52.084"/>
+</kw>
+<status status="PASS" starttime="20230927 11:04:52.083" endtime="20230927 11:04:52.084"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@adelianame="IDC_F20"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230927 11:04:52.085" level="INFO">Clicking button '//*[@adelianame="IDC_F20"]'.</msg>
+<status status="PASS" starttime="20230927 11:04:52.084" endtime="20230927 11:04:52.408"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//html/body/div[2]/div[1]/div[1]/div[10]/div[4]/div[9]/div[2]/div/div[2]/table/tr/td[3]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230927 11:04:52.408" endtime="20230927 11:04:53.237"/>
+</kw>
+<kw name="Open Context Menu" library="SeleniumLibrary">
+<arg>xpath=//html/body/div[2]/div[1]/div[1]/div[10]/div[4]/div[9]/div[2]/div/div[2]/table/tr/td[3]</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230927 11:04:53.237" endtime="20230927 11:04:53.554"/>
+</kw>
+<kw name=" Modify Confirm" library="keywords_manage_receipts">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//html/body/div[36]/table/tbody/tr[1]/td[2]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20230927 11:05:13.787" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=117.0.2045.36)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7CDB699A2+63682]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7CDAF18F2+267714]
+	(No symbol) [0x00007FF7CD8AAC0E]
+	(No symbol) [0x00007FF7CD8828C7]
+	(No symbol) [0x00007FF7CD920B9F]
+	(No symbol) [0x00007FF7CD9363E8]
+	(No symbol) [0x00007FF7CD91C623]
+	(No symbol) [0x00007FF7CD8EDA7A]
+	(No symbol) [0x00007FF7CD8ECD6B]
+	(No symbol) [0x00007FF7CD8EE204]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7CDD36779+1233737]
+	(No symbol) [0x00007FF7CD96B274]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7CDA3329A+33498]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7CDA2BDD9+3609]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7CDD35514+1229028]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7CDAFBA98+309096]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7CDAF6774+287812]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7CDAF68A2+288114]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7CDAE9FA1+236657]
+	BaseThreadInitThunk [0x00007FFF2F7A257D+29]
+	RtlUserThreadStart [0x00007FFF3028AA68+40]
+</msg>
+<msg timestamp="20230927 11:05:13.794" level="FAIL">Element 'xpath=//html/body/div[36]/table/tbody/tr[1]/td[2]' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20230927 11:04:53.555" endtime="20230927 11:05:13.799"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath=//html/body/div[36]/table/tbody/tr[1]/td[2]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="NOT RUN" starttime="20230927 11:05:13.799" endtime="20230927 11:05:13.799"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//html/body/div[36]/table/tbody/tr[1]/td[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230927 11:05:13.800" endtime="20230927 11:05:13.800"/>
+</kw>
+<kw name="Pause" library="keywords_common">
+<status status="NOT RUN" starttime="20230927 11:05:13.800" endtime="20230927 11:05:13.800"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//html/body/div[2]/div[1]/div[1]/div[11]/div[4]/div[1]/div[1]/div[4]/div/div[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230927 11:05:13.800" endtime="20230927 11:05:13.800"/>
+</kw>
+<kw name="Pause" library="keywords_common">
+<status status="NOT RUN" starttime="20230927 11:05:13.800" endtime="20230927 11:05:13.800"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//html/body/div[2]/div[1]/div[1]/div[11]/div[4]/div[1]/div[3]/div[2]/div/div[13]/div/input</arg>
+<arg>${DATE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230927 11:05:13.800" endtime="20230927 11:05:13.800"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@adelianame="IDC_ENTREE"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230927 11:05:13.801" endtime="20230927 11:05:13.801"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@role="gridcell"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230927 11:05:13.801" endtime="20230927 11:05:13.801"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@adelianame="IDC_ENTREE"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230927 11:05:13.801" endtime="20230927 11:05:13.801"/>
+</kw>
+<kw name="Pause" library="keywords_common">
+<status status="NOT RUN" starttime="20230927 11:05:13.801" endtime="20230927 11:05:13.801"/>
+</kw>
+<status status="FAIL" starttime="20230927 11:04:53.554" endtime="20230927 11:05:13.801"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//html/body/div[2]/div[1]/div[1]/div[10]/div[4]/div[9]/div[2]/div/div[3]/table/tr/td[3]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230927 11:05:13.801" endtime="20230927 11:05:13.801"/>
+</kw>
+<kw name="Open Context Menu" library="SeleniumLibrary">
+<arg>xpath=//html/body/div[2]/div[1]/div[1]/div[10]/div[4]/div[9]/div[2]/div/div[3]/table/tr/td[3]</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230927 11:05:13.802" endtime="20230927 11:05:13.802"/>
+</kw>
+<kw name=" Modify Confirm" library="keywords_manage_receipts">
+<status status="NOT RUN" starttime="20230927 11:05:13.802" endtime="20230927 11:05:13.802"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//html/body/div[2]/div[1]/div[1]/div[10]/div[4]/div[9]/div[2]/div/div[4]/table/tr/td[3]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230927 11:05:13.802" endtime="20230927 11:05:13.802"/>
+</kw>
+<kw name="Open Context Menu" library="SeleniumLibrary">
+<arg>xpath=//html/body/div[2]/div[1]/div[1]/div[10]/div[4]/div[9]/div[2]/div/div[4]/table/tr/td[3]</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230927 11:05:13.802" endtime="20230927 11:05:13.802"/>
+</kw>
+<kw name=" Modify Confirm" library="keywords_manage_receipts">
+<status status="NOT RUN" starttime="20230927 11:05:13.803" endtime="20230927 11:05:13.803"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//html/body/div[2]/div[1]/div[1]/div[10]/div[4]/div[9]/div[2]/div/div[5]/table/tr/td[3]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230927 11:05:13.803" endtime="20230927 11:05:13.803"/>
+</kw>
+<kw name="Open Context Menu" library="SeleniumLibrary">
+<arg>xpath=//html/body/div[2]/div[1]/div[1]/div[10]/div[4]/div[9]/div[2]/div/div[5]/table/tr/td[3]</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230927 11:05:13.803" endtime="20230927 11:05:13.803"/>
+</kw>
+<kw name=" Modify Confirm" library="keywords_manage_receipts">
+<status status="NOT RUN" starttime="20230927 11:05:13.803" endtime="20230927 11:05:13.803"/>
+</kw>
+<kw name="Finish Confirm" library="keywords_manage_receipts">
+<status status="NOT RUN" starttime="20230927 11:05:13.804" endtime="20230927 11:05:13.804"/>
+</kw>
+<status status="FAIL" starttime="20230927 11:04:50.952" endtime="20230927 11:05:13.804"/>
+</kw>
+<kw name="Refresh Page" library="keywords_manage_receipts">
+<status status="NOT RUN" starttime="20230927 11:05:13.804" endtime="20230927 11:05:13.804"/>
+</kw>
+<kw name="Close Receipt Window" library="keywords_manage_receipts">
+<status status="NOT RUN" starttime="20230927 11:05:13.805" endtime="20230927 11:05:13.805"/>
+</kw>
+<kw name="Close Reflex" library="keywords_common">
+<status status="NOT RUN" starttime="20230927 11:05:13.806" endtime="20230927 11:05:13.806"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230927 11:05:13.808" endtime="20230927 11:05:16.242"/>
+</kw>
+<status status="FAIL" starttime="20230927 11:02:58.061" endtime="20230927 11:05:16.242">Element 'xpath=//html/body/div[36]/table/tbody/tr[1]/td[2]' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" starttime="20230927 11:02:57.726" endtime="20230927 11:05:16.244"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230927 11:02:58.057" level="ERROR">Error in file 'C:\Users\MaxSchuiling\OneDrive - KZA B.V\Bureaublad\Opdrachten\Gall&amp;Gall Stage\ReflexAutomation-main\src\test\java\nl\gall\reflex\selenium\test.robot' on line 9: Setting 'Test Setup' is not allowed in resource file.</msg>
+<msg timestamp="20230927 11:02:58.058" level="ERROR">Error in file 'C:\Users\MaxSchuiling\OneDrive - KZA B.V\Bureaublad\Opdrachten\Gall&amp;Gall Stage\ReflexAutomation-main\src\test\java\nl\gall\reflex\selenium\test.robot' on line 10: Setting 'Test Teardown' is not allowed in resource file.</msg>
+<msg timestamp="20230927 11:02:58.058" level="ERROR">Error in file 'C:\Users\MaxSchuiling\OneDrive - KZA B.V\Bureaublad\Opdrachten\Gall&amp;Gall Stage\ReflexAutomation-main\src\test\java\nl\gall\reflex\selenium\keywords_manage_receipts.robot' on line 6: Error in file 'C:\Users\MaxSchuiling\OneDrive - KZA B.V\Bureaublad\Opdrachten\Gall&amp;Gall Stage\ReflexAutomation-main\src\test\java\nl\gall\reflex\selenium\test.robot' on line 16: Resource file with 'Test Cases' section is invalid.</msg>
+<msg timestamp="20230927 11:05:13.787" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=117.0.2045.36)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7CDB699A2+63682]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7CDAF18F2+267714]
+	(No symbol) [0x00007FF7CD8AAC0E]
+	(No symbol) [0x00007FF7CD8828C7]
+	(No symbol) [0x00007FF7CD920B9F]
+	(No symbol) [0x00007FF7CD9363E8]
+	(No symbol) [0x00007FF7CD91C623]
+	(No symbol) [0x00007FF7CD8EDA7A]
+	(No symbol) [0x00007FF7CD8ECD6B]
+	(No symbol) [0x00007FF7CD8EE204]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7CDD36779+1233737]
+	(No symbol) [0x00007FF7CD96B274]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7CDA3329A+33498]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7CDA2BDD9+3609]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7CDD35514+1229028]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7CDAFBA98+309096]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7CDAF6774+287812]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7CDAF68A2+288114]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7CDAE9FA1+236657]
+	BaseThreadInitThunk [0x00007FFF2F7A257D+29]
+	RtlUserThreadStart [0x00007FFF3028AA68+40]
+</msg>
+</errors>
+</robot>

@@ -1,0 +1,40 @@
+{
+  "LEVE": {
+    "leve_in_num": 989517,
+    "leve_ch_naa": "PANE E VINO",
+    "leve_de_ean": 0.0,
+    "land_ch_oms": "Nederlanden",
+    "land_ch_kod": "NL",
+    "timestamp": "2022-01-21T16:13:24.218+01:00"
+  },
+  "REFLEX": {
+    "code": "940659",
+    "designation": "iDeliverWine",
+    "short_designation": "iDeliverWine",
+    "keyword": "iDeliverWine",
+    "working_code": "iDeliverWine",
+    "contacts_telephone": "162572410",
+    "contacts_fax": "162572411",
+    "contact": "ESCH, VAN, S.",
+    "rhd_holder_code": "1",
+    "corresponding_physical_depot": "101",
+    "check_item_lv_supplier": "false",
+    "deactivate": "false",
+    "optional_attributes": {
+      "company_name": "I Deliver Wine !@#$\/\\",
+      "address_1": "ZALMWEG 27 ",
+      "address_2": "TEST \"`'",
+      "address_3": "4941 VX RAAMSDONKVEER",
+      "address_4": "Test Automation",
+      "telephone": "0031(0)162572410",
+      "fax": "0031(0)162572411"
+    },
+    "hd_type_list": [
+      {
+        "hd_type_code": "BLO",
+        "rhd_holder_code": "1",
+        "rhd_sequence_number": 0
+      }
+    ]
+  }
+}

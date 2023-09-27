@@ -1,0 +1,99 @@
+{
+  "item_code": "string",
+  "designation": "string",
+  "short_designation": "string",
+  "keyword": "string",
+  "working_code": "string",
+  "item_marking": "string",
+  "variable_weight_item": "false",
+  "returnable_container": "false",
+  "alcohol_item": "false",
+  "hazardous_item": "false",
+  "stabilisation_number_days": 0,
+  "minimum_priority_date_day_number": 0,
+  "storage_priority_levelling_date_range": 0,
+  "preparation_levelling_date_range": 0,
+  "expiry_group_code": "string",
+  "basic_reference_code": "string",
+  "lv_type_code": "string",
+  "receipt_weight_detailed": "false",
+  "preparation_weight_detailed": "false",
+  "set_down_flat_prepacking": "false",
+  "new_item": "false",
+  "item_description": "string",
+  "deactivate": "false",
+  "picture": {
+    "binary": "string"
+  },
+  "alcohol": {
+    "regie_code": "string",
+    "degree": 0,
+    "capacity": 0,
+    "item_type": "string",
+    "category_of_taxation": "string"
+  },
+  "logistical_variant_list": [
+    {
+      "logistical_variant_code": "string",
+      "keyword": "string",
+      "working code": "string",
+      "lv_type_code": "string",
+      "base_lv": "false",
+      "packaging_lv": "false",
+      "subpackaging_lv_code": "string",
+      "quantity_in_subpackaging_lv": 0,
+      "lv_order_reference": "string",
+      "net_weight": 0,
+      "gross_weight": 0,
+      "height": 0,
+      "width": 0,
+      "depth": 0,
+      "volume": 0,
+      "standard_price": 0,
+      "check_at_receipt": "false",
+      "repacking_at_receipt": "false",
+      "hd_type_code": "string",
+      "location_size_code": "string",
+      "standard_storage_number_packages": 0,
+      "automatic_hd_association": "false",
+      "storage_group_code": "string",
+      "bulk_storage_group_code": "string",
+      "subpackaging_lv_nb_constituting_layer": 0,
+      "height_layer": 0,
+      "preparation_group_code": "string",
+      "packaging_lv_service_start_date": "0000-00-00",
+      "packaging_lv_service_end_date": "0000-00-00",
+      "management_lv": "false",
+      "kit": "false",
+      "new_lv": "false",
+      "putaway_constraint_code_full_layer": "string",
+      "supported_weight_full_layer": 0,
+      "putaway_constraint_code_nonfull_layer": "string",
+      "recalculate_size_code": "false",
+      "stackable_hd": "false",
+      "stack_composition_constraint_code": "string",
+      "supported_maximum_weight": 0,
+      "deactivate": "false",
+      "id_list": [
+        {
+          "logistical_variant_ID_type_code": "string",
+          "logistical_variant_ID_code": "string",
+          "comment_list": [
+            {
+              "line_number": 0,
+              "group_code": "string",
+              "text": "string"
+            }
+          ]
+        }
+      ],
+
+      "storage_group_list": [
+        {
+          "physical_depot_code": "string",
+          "storage_group_code": "string"
+        }
+      ]
+    }
+  ]
+}

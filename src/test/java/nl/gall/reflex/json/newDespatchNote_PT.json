@@ -1,0 +1,87 @@
+
+{
+    "type_code": "010",
+    "receipt_type_code": "REC",
+    "receipt_reason_code": "SUP",
+    "originator_code": "ERP",
+    "delivery_reference": "TA_REF",
+    "planned_receipt_datetime": "<REPLACED WITH DATETIME>",
+    "generate_receipt": true,
+    "confirm_receipt": false,
+    "receipt_generate_hd": false,
+    "line_list": [
+      {
+        "line_number": 1,
+        "line_reference": "<REPLACED WITH LINE REF WITH TIMESTAMP>",
+        "item_lv_code": "30",
+        "level_2_quantity": "<RANDOM AMOUNT 1-5>",
+        "owner_code": "GAL",
+        "grade_code": "STD",
+        "additional_data_group_list": [
+          {
+            "additional_data_group_code": "GG_REC_EXP"
+          }
+        ],
+        "additional_data_value_list": [
+          {
+            "additional_data_item_code": "QUANTY_EXP",
+            "additional_data_item_value": "<SAME RANDOM AMOUNT AS LVL3QTY>"
+          }
+        ]
+      },{
+        "line_number": 2,
+        "line_reference": "<REPLACED WITH LINE REF WITH TIMESTAMP>",
+        "item_lv_code": "30",
+        "level_2_quantity": "<RANDOM AMOUNT 1-5>",
+        "owner_code": "GAL",
+        "grade_code": "STD",
+        "additional_data_group_list": [
+          {
+            "additional_data_group_code": "GG_REC_EXP"
+          }
+        ],
+        "additional_data_value_list": [
+          {
+            "additional_data_item_code": "QUANTY_EXP",
+            "additional_data_item_value": "<SAME RANDOM AMOUNT AS LVL3QTY>"
+          }
+        ]
+      },{
+        "line_number": 3,
+        "line_reference": "<REPLACED WITH LINE REF WITH TIMESTAMP>>",
+        "item_lv_code": "30",
+        "level_2_quantity": "<RANDOM AMOUNT 1-5>",
+        "owner_code": "GAL",
+        "grade_code": "STD",
+        "additional_data_group_list": [
+          {
+            "additional_data_group_code": "GG_REC_EXP"
+          }
+        ],
+        "additional_data_value_list": [
+          {
+            "additional_data_item_code": "QUANTY_EXP",
+            "additional_data_item_value": "<SAME RANDOM AMOUNT AS LVL3QTY>"
+          }
+        ]
+      },{
+        "line_number": 4,
+        "line_reference": "<REPLACED WITH LINE REF WITH TIMESTAMP>",
+        "item_lv_code": "30",
+        "level_2_quantity": "<RANDOM AMOUNT 1-5>",
+        "owner_code": "GAL",
+        "grade_code": "STD",
+        "additional_data_group_list": [
+          {
+            "additional_data_group_code": "GG_REC_EXP"
+          }
+        ],
+        "additional_data_value_list": [
+          {
+            "additional_data_item_code": "QUANTY_EXP",
+            "additional_data_item_value": "<SAME RANDOM AMOUNT AS LVL3QTY>"
+          }
+        ]
+      }
+    ]
+}

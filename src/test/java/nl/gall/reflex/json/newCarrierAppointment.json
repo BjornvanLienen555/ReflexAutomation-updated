@@ -1,0 +1,16 @@
+{
+  "appointment_reference": "<REPLACED WITH APP REF>",
+  "appointment_designation": "<REPLACED WITH APP DES>",
+  "unloading_appointment": true,
+  "planned_unloading_start_datetime": "<REPLACED WITH DATETIME>",
+  "planned_unloading_end_datetime": "<REPLACED WITH DATETIME>",
+  "load_appointment": false,
+  "constant_appointment": false,
+  "physical_receipt_list": [
+    {
+      "originator_code": "ERP",
+      "receipt_activity": "GG1",
+      "physical_receipt_reference": "<REPLACED WITH LINE REF>"
+    }
+  ]
+}

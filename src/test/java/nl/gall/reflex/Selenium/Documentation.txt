@@ -1,0 +1,26 @@
+There is a READ ME.txt available on how to work with Selenium. 
+There is also a note surrounding the error in keywords.robot, assuming it has not been fixed yet.
+
+Outside that:
+test.robot is the executable test
+
+auth.robot is the file that has authorisation data and needs to be adjusted for security reasons
+
+keywords.robot is the main keyword file, although if expanded upon, 
+needs to be seperated for the sake of information management.
+Any file that is made as an expansion is labeled with keywords_ to keep them organized
+
+keywords_common.robot contains keywords that have been identified to be used in more than 1 occasion 
+or selenium inputs that are too long that have been shortened for ease
+
+keywords_manage_receipts contains keywords that are used throughout the manage receipt window
+
+variables.robot is the main variable file, although if expanded upon, 
+needs to be seperated for the sake of information management
+
+xpathvariables.robot is a variable file made for xpaths that are used multiple times
+(+ data that is only used for those variables)
+
+xpaths.robot is not used anywhere as a resource, 
+because it just contains the xpaths known for specifics that are either unused, 
+or just for the sake of having an easy xpath library without needing to constantly check

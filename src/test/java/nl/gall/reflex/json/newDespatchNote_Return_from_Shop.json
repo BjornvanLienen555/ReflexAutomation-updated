@@ -1,0 +1,99 @@
+{
+  "type_code": "010",
+  "receipt_type_code": "020",
+  "receipt_reason_code": "STO",
+  "originator_code": "ERP",
+  "delivery_reference": "",
+  "planned_receipt_datetime": "2023-08-29T00:00:00.000",
+  "generate_receipt": true,
+  "confirm_receipt": false,
+  "receipt_generate_hd": false,
+  "dock_location_code_1": "DOCK",
+  "dock_location_code_2": ".",
+  "dock_location_code_3": "RET",
+  "dock_location_code_4": "",
+  "dock_location_code_5": "",
+  "work_mode_code": "R90",
+  "line_list": [
+    {
+      "line_number": 0,
+      "line_reference": "",
+      "item_code": "",
+      "item_lv_code": "10",
+      "level_1_quantity": 6,
+      "owner_code": "GAL",
+      "grade_code": "STD",
+      "additional_data_group_list": [
+        {
+          "additional_data_group_code": "GG_REC_EXP"
+        }
+      ],
+      "additional_data_value_list": [
+        {
+          "additional_data_item_code": "QUANTY_EXP",
+          "additional_data_item_value": "6"
+        }
+      ]
+    },
+    {
+      "line_number": 1,
+      "line_reference": "",
+      "item_code": "",
+      "item_lv_code": "10",
+      "level_1_quantity": "6",
+      "owner_code": "GAL",
+      "grade_code": "STD",
+      "additional_data_group_list": [
+        {
+          "additional_data_group_code": "GG_REC_EXP"
+        }
+      ],
+      "additional_data_value_list": [
+        {
+          "additional_data_item_code": "QUANTY_EXP",
+          "additional_data_item_value": "6"
+        }
+      ]
+    },
+    {
+      "line_number": 2,
+      "line_reference": "",
+      "item_code": "",
+      "item_lv_code": "10",
+      "level_1_quantity": "6",
+      "owner_code": "GAL",
+      "grade_code": "STD",
+      "additional_data_group_list": [
+        {
+          "additional_data_group_code": "GG_REC_EXP"
+        }
+      ],
+      "additional_data_value_list": [
+        {
+          "additional_data_item_code": "QUANTY_EXP",
+          "additional_data_item_value": "6"
+        }
+      ]
+    },
+    {
+      "line_number": 3,
+      "line_reference": "",
+      "item_code": "",
+      "item_lv_code": "10",
+      "level_1_quantity": "6",
+      "owner_code": "GAL",
+      "grade_code": "STD",
+      "additional_data_group_list": [
+        {
+          "additional_data_group_code": "GG_REC_EXP"
+        }
+      ],
+      "additional_data_value_list": [
+        {
+          "additional_data_item_code": "QUANTY_EXP",
+          "additional_data_item_value": "6"
+        }
+      ]
+    }
+  ]
+}

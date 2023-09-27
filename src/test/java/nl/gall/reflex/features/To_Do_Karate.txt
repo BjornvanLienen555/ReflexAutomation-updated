@@ -1,0 +1,5 @@
+Currently to-do:
+CreateDespatchNotes_for_PT_copy.feature does fully randomize things, but the json is made for VolleDozen. 
+This can be noted when going from fully randomized items to only randomized items that are from VolleDozen, as this reduces the errors.
+However, even with the reduction of errors, they still appear since the VolleDozen items in ItemsForPT.csv are the only ones that don't produce any errors.
+For the sake of testing, the old file still remains, and should remain, until the error issue is resolved.

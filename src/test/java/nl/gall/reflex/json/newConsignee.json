@@ -1,0 +1,62 @@
+{
+  "AFNE": {
+  },
+  "REFLEX": {
+    "code": "191219IB",
+    "designation": "Im a Store",
+    "short_designation": "Store",
+    "keyword": "191219IB",
+    "transfers": "true",
+    "corresponding_physical_depot_code": "101",
+    "distribution_channel_code": "STD",
+    "region_code": "STD",
+    "bank_holiday_group_code": "NL",
+    "minimum_priority_date_management": "true",
+    "upper_priority_date_management": "false",
+    "back_order_items_possible": "true",
+    "automatic_back_order_items": "false",
+    "closure_possible": "true",
+    "automatic_closure": "true",
+    "intermediate_consignee": "true",
+    "consolidated_delivery": "true",
+    "print_deconsolidation_sheet": "true",
+    "print_final_dns": "true",
+    "print_pallet_sheet": "true",
+    "interface_for_consignee": "false",
+    "allocated_rhds": "false",
+    "hd_type_code": "EUR",
+    "hd_maximum_weight": 5000,
+    "hd_maximum_volume": 250,
+    "hd_standard_volume": 10,
+    "split_pick": "false",
+    "despatch_note_interface_generate": "true",
+    "despatch_note_interface_generation_chain_code": "HL_EDI_DESADV",
+    "detailed_despatch_note": "true",
+    "allocated_despatch_note": "true",
+    "deactivate": "false",
+    "address": {
+      "code": "TEST ADDRESS",
+      "company_name": "Im a Store",
+      "address_1": "address_1",
+      "address_2": "address_2",
+      "address_3": "2311AA Area Name",
+      "address_4": "New york  USA",
+      "telephone": "0612345678",
+      "fax": "0881234567",
+      "other_number": "0687654321"
+    },
+    "delivery_note_printing": {
+      "mode": "010",
+      "customisable_type": "string",
+      "specific_programm_name": "string",
+      "language_code": "string"
+    },
+    "alcohol": {
+      "alcohol_consignee_group_code": "ALL",
+      "delivery_code_type": "010",
+      "alcohol_move_type_code_invoice_cad": "030",
+      "alcohol_move_type_code_invoice_sad": "030",
+      "edi_consignee": "false"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+GATHER DATA FROM REFLEX
+To inspect page: CTRL+SHIFT+C
+This opens up the console drawer, keep this open.
+Click the element you want to inspect to highlight the element.
+Scroll to make sure you have the correct element, and not an element that interacts with the element you want to directly interact with.
+(As an example, the date input element has an element that prevents the search bar from accidently being used, 
+clicking it with the mouse allows you to change the date manually, but for Selenium use, you need the input element directly)
+After inspecting, to inspect again, use CTRL+SHIFT+C or use the inspect button in the console drawer.
+
+IMPLEMENT DATA FROM REFLEX
+Unique XPath identificators get randomized, so make sure to get the full XPath or get really specific with multiple identificators
+To get the full XPath: Right Click the inspected element>Copy>Copy full XPath
+Also make sure that you use xpath=/ before pasting the full XPath. (so you get xpath=//html, the xpaths in xpaths.robot already have an extra slash)
+There are some exceptions, where the XPath does work with multiple identificators, in which case:
+Right Click the inspected element>Copy>Copy XPath
+Then change the @id identificator with an @class, @title or any other seemingly unique identificator and specify as such:
+//*[]
+This is not preferred due to very few identificators being actually unique, even in multitude, 
+but in the cases where the XPath works, it's preferable for readability. 
+But default to full XPaths untill a unique XPath has been found
+
+EXECUTE TEST.ROBOT
+Make sure to change directory to the selenium folder with "cd src\test\java\nl\gall\reflex\selenium"
+Then execute file in the terminal with "robot test.robot"
+You can go back in the directory with "cd..."
+
+SELENIUM QUIRKS WITH REFLEX
+There is a CustomLib.py dedicated to trying to focus the window. 
+Everytime a window is opened through human input, it is always in focus, through automation, it sometimes is not.
+For consistency, there is CustomLib.py, but CustomLib.py is not setup properly yet and should be looked at if possible
